@@ -1,11 +1,21 @@
-module.exports.getLocation = function(request, response) {
-};
+import BaseController from './base-controller';
 
-module.exports.getAverageMark = function(request, response) {
-};
+class LocationController extends BaseController {
+    getLocation (request, response) {
 
-module.exports.updateLocation = function(request, response) {
-};
+    }
 
-module.exports.createLocation = function(request, response) {
-};
+    getAverageMark (request, response) {
+
+    }
+
+    updateLocation (request, response) {
+
+    }
+
+    createLocation (request, response) {
+
+    }
+}
+
+export default LocationController;

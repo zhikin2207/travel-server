@@ -1,8 +1,17 @@
-module.exports.getVisit = function(request, response) {
-};
+import BaseController from './base-controller';
 
-module.exports.updateVisit = function(request, response) {
-};
+class VisitController extends BaseController {
+    getVisit (request, response) {
 
-module.exports.createVisit = function(request, response) {
-};
+    }
+
+    updateVisit (request, response) {
+
+    }
+
+    createVisit (request, response) {
+
+    }
+}
+
+export default VisitController;

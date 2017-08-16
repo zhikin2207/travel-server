@@ -1,12 +1,17 @@
-var express = require('express');
+import express from 'express';
+import bodyParser from 'body-parser';
 
-var config = require('./config');
+import config from './config';
+import UserController from './controllers/user-controller';
+import LocationController from './controllers/location-controller';
+import VisitController from './controllers/visit-controller';
 
-var userController = require('./controllers/user-controller');
-var locationController = require('./controllers/location-controller');
-var visitController = require('./controllers/visit-controller');
+const app = express();
+const userController = new UserController();
+const locationController = new LocationController();
+const visitController = new VisitController();
 
-var app = express();
+app.use(bodyParser.json());
 
 app.get('/users/:id(\\d+)', userController.getUser);
 app.get('/users/:id(\\d+)/visits', userController.getUserVisits);

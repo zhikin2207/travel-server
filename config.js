@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     url: {
         mongodb: 'mongodb://localhost:27017/travel'
     },

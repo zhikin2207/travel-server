@@ -5,11 +5,14 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "babel-node --presets es2015 app.js"
   },
   "author": "Mr.Zhykin",
   "license": "ISC",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "mongodb": "^2.2.31"
   }
